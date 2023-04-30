@@ -6,7 +6,8 @@ import styles from "./styles.module.css";
 
 function BlogCard({ title, body, id }) {
   return (
-    <Link href="/" className={styles.card}>
+    // Linkteki href dinamic bir sekilde [id] klasorunden gelen id ye gore link olusturuyor
+    <Link href={`/${id}`} className={styles.card}>
       <div className={styles.cardImage}>
         <Image
           src={`https://picsum.photos/200/300?random=${id}`}
