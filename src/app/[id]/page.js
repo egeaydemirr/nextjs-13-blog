@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 async function getPost(id) {
   try {
-    const response = await fetch(`https://dummjson.com/post/${id}`);
+    const response = await fetch(`https://dummyjson.com/post/${id}`);
     return response.json();
   } catch (error) {
     throw new Error(error);
